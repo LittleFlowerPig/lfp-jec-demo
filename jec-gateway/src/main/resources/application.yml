@@ -1,0 +1,20 @@
+server:
+  port: 30000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+
+spring:
+  application:
+    name: service-gate
+
+zuul:
+  routes:
+    log:
+      path: /log/**
+      serviceId: service-log
+    job:
+      path: /job/**
+      serviceId: service-job

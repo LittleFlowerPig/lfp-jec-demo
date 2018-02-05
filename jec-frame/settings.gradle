@@ -1,0 +1,4 @@
+rootProject.name = 'jec-frame'
+include 'jec-frame-base'
+include 'jec-frame-util'
+

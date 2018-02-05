@@ -1,0 +1,4 @@
+rootProject.name = 'jec-balance-log'
+
+includeFlat('jec-frame')
+include('jec-frame:jec-frame-base')

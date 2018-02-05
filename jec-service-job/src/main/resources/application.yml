@@ -1,0 +1,11 @@
+server:
+  port: 23020
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:22001/eureka/
+
+spring:
+  application:
+    name: service-job
