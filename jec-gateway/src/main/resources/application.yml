@@ -1,5 +1,5 @@
 server:
-  port: 30000
+  port: 40001
 
 eureka:
   client:
@@ -8,13 +8,19 @@ eureka:
 
 spring:
   application:
-    name: service-gate
+    name: jec-gateway
 
 zuul:
   routes:
     log:
       path: /log/**
-      serviceId: service-log
+      serviceId: jec-balance-log
     job:
       path: /job/**
-      serviceId: service-job
+      serviceId: jec-balance-job
+    user:
+      path: /user/**
+      serviceId: jec-balance-user
+    right:
+      path: /right/**
+      serviceId: jec-balance-right

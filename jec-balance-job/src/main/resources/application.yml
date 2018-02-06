@@ -1,5 +1,5 @@
 server:
-  port: 20100
+  port: 29900
 
 eureka:
   client:
@@ -8,4 +8,4 @@ eureka:
 
 spring:
   application:
-    name: jec-balance-log
+    name: jec-balance-job

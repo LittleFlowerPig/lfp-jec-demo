@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableDiscoveryClient        	//声明为一个服务发现者
 public class JecBalanceLogApplication {
 
 	public static void main(String[] args) {

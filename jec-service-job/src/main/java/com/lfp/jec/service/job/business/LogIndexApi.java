@@ -3,6 +3,7 @@ package com.lfp.jec.service.job.business;
 import com.lfp.jec.frame.base.business.IndexApi;
 import com.lfp.jec.frame.base.helper.ret.RetObject;
 import com.lfp.jec.frame.base.helper.ret.RetUtil;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -19,9 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LogIndexApi extends IndexApi {
 
+    @Value("${server.port}")
+    private String port;
+
+    @Value("${db.type}")
+    private String dbType;
+
     @Override
     public RetObject index() {
-        return RetUtil.returnSuccess("欢迎进入[任务]系统");
+        return RetUtil.returnSuccess("欢迎进入[任务]系统，端口("+port+")，数据类型("+dbType+")");
     }
 
 }

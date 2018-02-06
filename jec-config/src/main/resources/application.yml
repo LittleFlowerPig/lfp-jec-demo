@@ -1,5 +1,5 @@
 server:
-  port: 29999
+  port: 8888
 
 eureka:
   client:
@@ -8,11 +8,10 @@ eureka:
 
 spring:
   application:
-    name: jec-service-job
+    name: jec-config
   cloud:
     config:
       label: master
-      profile: dev
-      discovery:
-        enabled: true
-        service-id: jec-config
+      server:
+        git:
+          uri: https://github.com/LittlFlowerPig/lfp-jec.git
