@@ -15,4 +15,4 @@ spring:
       profile: dev
       discovery:
         enabled: true
-        service-id: jec-gateway-config
+        service-id: jec-config

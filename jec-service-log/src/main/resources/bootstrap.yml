@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:30001
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: jec-config
