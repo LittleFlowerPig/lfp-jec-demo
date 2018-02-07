@@ -1,5 +1,5 @@
 server:
-  port: 30001
+  port: 39999
 
 eureka:
   client:
@@ -8,7 +8,7 @@ eureka:
 
 spring:
   application:
-    name: jec-config
+    name: jec-config-git
   cloud:
     config:
       label: master

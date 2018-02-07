@@ -13,7 +13,6 @@ spring:
     config:
       label: master
       profile: dev
-      #uri: http://localhost:30001
       discovery:
         enabled: true
-        service-id: jec-config
+        service-id: jec-gateway-config
