@@ -1,0 +1,18 @@
+server:
+  port: 30101
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+
+spring:
+  application:
+    name: jec-config-base
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/LittlFlowerPig/lfp-jec.git
+          search-paths: jec-service-*

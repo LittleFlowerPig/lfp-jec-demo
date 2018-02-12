@@ -28,7 +28,9 @@ ext {
 }
 
 dependencies {
+	//微服务 - 注册中心
 	compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+	//测试
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

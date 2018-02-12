@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-@EnableEurekaServer		//声明为一个服务注册中心
+//微服务 - 注册中心
+@EnableEurekaServer
 public class JecCenterApplication {
 
 	public static void main(String[] args) {

@@ -29,9 +29,11 @@ ext {
 
 dependencies {
 	compile project(":jec-frame:jec-frame-base")
-
-	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	//负载均衡 - feign
 	compile('org.springframework.cloud:spring-cloud-starter-feign')
+	//微服务 - 注册服务
+	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	//测试
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

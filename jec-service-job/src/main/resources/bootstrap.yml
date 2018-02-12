@@ -1,5 +1,5 @@
 server:
-  port: 20101
+  port: 29999
 
 eureka:
   client:
@@ -8,11 +8,11 @@ eureka:
 
 spring:
   application:
-    name: jec-service-log
+    name: jec-service-job
   cloud:
     config:
       label: master
       profile: dev
       discovery:
         enabled: true
-        service-id: jec-config
+        service-id: jec-config-base
